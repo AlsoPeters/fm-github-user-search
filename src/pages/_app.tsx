@@ -3,7 +3,7 @@ import type { AppType } from 'next/dist/shared/lib/utils';
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div className='mx-6'>
+    <div className='mx-6 font-Space'>
       <Component {...pageProps} />
     </div>
   );

@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Main from '../components/Main';
 import Nav from '../components/nav';
+import Search from '../components/Search';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +13,8 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Nav />
-      <main></main>
+      <Search />
+      <Main />
     </>
   );
 };
