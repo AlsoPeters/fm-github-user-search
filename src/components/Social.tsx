@@ -7,21 +7,21 @@ export default function Social() {
   return (
     <div className='flex flex-col text-sm'>
       <div className='text-DM-white flex items-center gap-4 '>
-        <Location />
+        <Location className='fill-DM-white' />
         <p>San Francisco</p>
       </div>
       <div className='text-DM-white flex items-center gap-4 '>
-        <WebsiteIcon />
+        <WebsiteIcon className='fill-DM-white' />
         <p>https://github.blog</p>
       </div>
 
       <div className='text-DM-white flex items-center gap-4 '>
-        <TwitterIcon />
+        <TwitterIcon className='fill-DM-white' />
         <p>Not Available</p>
       </div>
 
       <div className='text-DM-white flex items-center gap-4'>
-        <CompanyIcon />
+        <CompanyIcon className='fill-DM-white' />
         <p>@github</p>
       </div>
     </div>

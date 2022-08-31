@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/index",{
+
+/***/ "./src/assets/icon-location.svg":
+/*!**************************************!*\
+  !*** ./src/assets/icon-location.svg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\nvar _path;\n\nfunction _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\n\n\nvar SvgIconLocation = function SvgIconLocation(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", _extends({\n    height: 20,\n    width: 14,\n    xmlns: \"http://www.w3.org/2000/svg\"\n  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M12.797 3.425C11.584 1.33 9.427.05 7.03.002a7.483 7.483 0 0 0-.308 0C4.325.05 2.17 1.33.955 3.425a6.963 6.963 0 0 0-.09 6.88l4.959 9.077.007.012c.218.38.609.606 1.045.606.437 0 .828-.226 1.046-.606l.007-.012 4.96-9.077a6.963 6.963 0 0 0-.092-6.88zm-5.92 5.638c-1.552 0-2.813-1.262-2.813-2.813s1.261-2.812 2.812-2.812S9.69 4.699 9.69 6.25 8.427 9.063 6.876 9.063z\"\n  })));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (SvgIconLocation);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXNzZXRzL2ljb24tbG9jYXRpb24uc3ZnLmpzIiwibWFwcGluZ3MiOiI7OztBQUFBOztBQUVBLHNCQUFzQixzRUFBc0UsZ0JBQWdCLHNCQUFzQixPQUFPLDJCQUEyQiwwQkFBMEIseURBQXlELGlDQUFpQyxrQkFBa0I7O0FBRTNROztBQUUvQjtBQUNBLHNCQUFzQixnREFBbUI7QUFDekM7QUFDQTtBQUNBO0FBQ0EsR0FBRyx5Q0FBeUMsZ0RBQW1CO0FBQy9EO0FBQ0EsR0FBRztBQUNIOztBQUVBLCtEQUFlLGVBQWUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vc3JjL2Fzc2V0cy9pY29uLWxvY2F0aW9uLnN2Zz81Y2E5Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBfcGF0aDtcblxuZnVuY3Rpb24gX2V4dGVuZHMoKSB7IF9leHRlbmRzID0gT2JqZWN0LmFzc2lnbiA/IE9iamVjdC5hc3NpZ24uYmluZCgpIDogZnVuY3Rpb24gKHRhcmdldCkgeyBmb3IgKHZhciBpID0gMTsgaSA8IGFyZ3VtZW50cy5sZW5ndGg7IGkrKykgeyB2YXIgc291cmNlID0gYXJndW1lbnRzW2ldOyBmb3IgKHZhciBrZXkgaW4gc291cmNlKSB7IGlmIChPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwoc291cmNlLCBrZXkpKSB7IHRhcmdldFtrZXldID0gc291cmNlW2tleV07IH0gfSB9IHJldHVybiB0YXJnZXQ7IH07IHJldHVybiBfZXh0ZW5kcy5hcHBseSh0aGlzLCBhcmd1bWVudHMpOyB9XG5cbmltcG9ydCAqIGFzIFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuXG52YXIgU3ZnSWNvbkxvY2F0aW9uID0gZnVuY3Rpb24gU3ZnSWNvbkxvY2F0aW9uKHByb3BzKSB7XG4gIHJldHVybiAvKiNfX1BVUkVfXyovUmVhY3QuY3JlYXRlRWxlbWVudChcInN2Z1wiLCBfZXh0ZW5kcyh7XG4gICAgaGVpZ2h0OiAyMCxcbiAgICB3aWR0aDogMTQsXG4gICAgeG1sbnM6IFwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIlxuICB9LCBwcm9wcyksIF9wYXRoIHx8IChfcGF0aCA9IC8qI19fUFVSRV9fKi9SZWFjdC5jcmVhdGVFbGVtZW50KFwicGF0aFwiLCB7XG4gICAgZDogXCJNMTIuNzk3IDMuNDI1QzExLjU4NCAxLjMzIDkuNDI3LjA1IDcuMDMuMDAyYTcuNDgzIDcuNDgzIDAgMCAwLS4zMDggMEM0LjMyNS4wNSAyLjE3IDEuMzMuOTU1IDMuNDI1YTYuOTYzIDYuOTYzIDAgMCAwLS4wOSA2Ljg4bDQuOTU5IDkuMDc3LjAwNy4wMTJjLjIxOC4zOC42MDkuNjA2IDEuMDQ1LjYwNi40MzcgMCAuODI4LS4yMjYgMS4wNDYtLjYwNmwuMDA3LS4wMTIgNC45Ni05LjA3N2E2Ljk2MyA2Ljk2MyAwIDAgMC0uMDkyLTYuODh6bS01LjkyIDUuNjM4Yy0xLjU1MiAwLTIuODEzLTEuMjYyLTIuODEzLTIuODEzczEuMjYxLTIuODEyIDIuODEyLTIuODEyUzkuNjkgNC42OTkgOS42OSA2LjI1IDguNDI3IDkuMDYzIDYuODc2IDkuMDYzelwiXG4gIH0pKSk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBTdmdJY29uTG9jYXRpb247Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/assets/icon-location.svg\n"));
+
+/***/ })
+
+});
