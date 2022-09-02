@@ -14,9 +14,9 @@ function useDarkMode() {
     if (typeof window !== 'undefined') {
       localStorage.setItem('theme', theme);
     }
-  }, [theme]);
+  }, [theme, colorTheme]);
 
-  return [colorTheme, setTheme];
+  return [colorTheme, setTheme] as const;
 }
 
 export default useDarkMode;
