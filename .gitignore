@@ -23,3 +23,6 @@ node_modules
 
 # Ignore files related to API keys
 .env
+
+# Because Vercel told me not to
+.next
