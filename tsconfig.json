@@ -14,7 +14,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@static/*": ["./public/static/*"],
+      "@generated/*": ["./src/__generated__/*"],
+      "@*": ["./src*"]
+    }
   },
   "include": [
     "src/**/*",
@@ -23,7 +28,8 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    "next.config.js"
+    "next.config.js",
+    "public"
   ],
   "exclude": ["node_modules"]
 }
