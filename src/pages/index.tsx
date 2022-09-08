@@ -1,10 +1,38 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useState } from 'react';
 import Body from '../components/Body';
 import Nav from '../components/Nav';
 import Search from '../components/Search';
 
 const Home: NextPage = () => {
+  const [githubUser, setGithubUser] = useState(null);
+  const [searchError, setSearchError] = useState('');
+
+  const getUser = async (user: string) => {
+    setSearchError('');
+    try {
+      const res = await fetch(`https://api.github.com/users/${user}`);
+      const data = await res.json();
+      if (data.message) {
+        setSearchError(data.message);
+        return;
+      }
+      console.log('data', data);
+
+      setGithubUser(data);
+    } catch (error: any) {
+      console.log('error', error);
+      if (error && error.message) {
+        setSearchError(error?.message);
+      } else {
+        setSearchError('Something went wrong');
+      }
+    } finally {
+      console.log('finally');
+    }
+  };
+
   return (
     <div className='md:flex md:flex-col md:justify-center md:h-screen lg:mx-96'>
       <Head>
@@ -15,7 +43,7 @@ const Home: NextPage = () => {
 
       <div className='mx-6 md:mx-24 lg:mx-auto font-Space'>
         <Nav />
-        <Search />
+        <Search error={searchError} loading={false} onSearch={getUser} />
         <Body />
       </div>
     </div>

@@ -3,7 +3,7 @@ import Avatar from './Avatar';
 export default function Info() {
   return (
     <>
-      <div className='flex justify-self-start lg:justify-between items-center gap-4 md:gap-10 mt-4'>
+      <div className='flex items-center gap-4 mt-4 justify-self-start lg:justify-between md:gap-10'>
         <div className='lg:hidden'>
           <Avatar />
         </div>
@@ -11,12 +11,12 @@ export default function Info() {
           <div className='dark:text-DM-white md:text-2xl md:font-bold'>
             The Octocat
           </div>
-          <div className='text-DM-blue mb-2'>@octocat</div>
+          <div className='mb-2 text-DM-blue'>@octocat</div>
           <div className='dark:text-DM-white lg:hidden text-LM-grey'>
             Joined 25 Jan 2011
           </div>
         </div>
-        <div className='dark:text-DM-white hidden lg:contents  text-LM-grey'>
+        <div className='hidden dark:text-DM-white lg:contents text-LM-grey'>
           Joined 25 Jan 2011
         </div>
       </div>
