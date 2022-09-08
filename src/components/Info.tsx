@@ -1,6 +1,6 @@
 import Avatar from './Avatar';
 
-export default function Info() {
+export default function Info({ info }: InfoProps) {
   return (
     <>
       <div className='flex items-center gap-4 mt-4 justify-self-start lg:justify-between md:gap-10'>
@@ -9,22 +9,26 @@ export default function Info() {
         </div>
         <div className='flex flex-col'>
           <div className='dark:text-DM-white md:text-2xl md:font-bold'>
-            The Octocat
+            {info?.name}
           </div>
-          <div className='mb-2 text-DM-blue'>@octocat</div>
+          <div className='mb-2 text-DM-blue'>@{info?.login}</div>
           <div className='dark:text-DM-white lg:hidden text-LM-grey'>
-            Joined 25 Jan 2011
+            Joined {info?.created_at}
           </div>
         </div>
         <div className='hidden dark:text-DM-white lg:contents text-LM-grey'>
-          Joined 25 Jan 2011
+          Joined {info?.created_at}
+          {/* 25 Jan 2011 */}
         </div>
       </div>
 
       <p className='dark:text-white text-LM-grey text-[15px] leading-6'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. fdfdfdk
-        jklrhelkhfdj.
+        {info?.bio}
       </p>
     </>
   );
+}
+
+interface InfoProps {
+  info: any;
 }

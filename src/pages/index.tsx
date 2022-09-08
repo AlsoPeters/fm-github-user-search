@@ -46,7 +46,7 @@ const Home: NextPage = () => {
       <div className='mx-6 md:mx-24 lg:mx-auto font-Space'>
         <Nav />
         <Search error={searchError} loading={loading} onSearch={getUser} />
-        <Body />
+        <Body userInfo={githubUser} />
       </div>
     </div>
   );
