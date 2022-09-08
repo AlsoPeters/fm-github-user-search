@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchIcon from '../assets/icon-search.svg';
 
-export default function Search({ onSearch, error }: SearchProps) {
+export default function Search({ onSearch, error, loading }: SearchProps) {
   const [value, setValue] = useState('');
 
   function onSubmit() {
@@ -20,12 +20,16 @@ export default function Search({ onSearch, error }: SearchProps) {
             className='text-DM-white md:w-full font-Space text-sm caret-DM-blue dark:bg-DM-dark-blue border-none focus:outline-none'
           />
         </div>
-        <p>{error}</p>
+        <p className='text-red-500 mr-4'>{error}</p>
         <button
           onClick={() => {
             onSubmit();
           }}
-          className='bg-DM-blue border-none py-4 px-6 rounded-xl my-2 text-DM-white font-Space'
+          className={
+            loading
+              ? 'bg-DM-blue opacity-50 cursor-progress disabled border-none py-4 px-6 rounded-xl my-2 text-DM-white font-Space'
+              : 'bg-DM-blue border-none py-4 px-6 rounded-xl my-2 text-DM-white font-Space'
+          }
         >
           Search
         </button>

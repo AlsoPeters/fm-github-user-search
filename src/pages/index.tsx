@@ -8,9 +8,11 @@ import Search from '../components/Search';
 const Home: NextPage = () => {
   const [githubUser, setGithubUser] = useState(null);
   const [searchError, setSearchError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const getUser = async (user: string) => {
     setSearchError('');
+    setLoading(true);
     try {
       const res = await fetch(`https://api.github.com/users/${user}`);
       const data = await res.json();
@@ -29,7 +31,7 @@ const Home: NextPage = () => {
         setSearchError('Something went wrong');
       }
     } finally {
-      console.log('finally');
+      setLoading(false);
     }
   };
 
@@ -43,7 +45,7 @@ const Home: NextPage = () => {
 
       <div className='mx-6 md:mx-24 lg:mx-auto font-Space'>
         <Nav />
-        <Search error={searchError} loading={false} onSearch={getUser} />
+        <Search error={searchError} loading={loading} onSearch={getUser} />
         <Body />
       </div>
     </div>
