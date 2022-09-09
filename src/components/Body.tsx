@@ -6,22 +6,16 @@ import Avatar from './Avatar';
 
 export default function Body({ userInfo }: BodyProps) {
   return (
-    <>
-      {userInfo ? (
-        <div className='dark:bg-DM-dark-blue lg:flex-row bg-LM-white rounded-xl my-4 px-6 py-4 flex flex-col gap-4 lg:px-10 shadow-lg'>
-          <div className='hidden lg:contents '>
-            <Avatar info={userInfo} />
-          </div>
-          <div className='lg:px-6'>
-            <Info info={userInfo} />
-            <Stats info={userInfo} />
-            <Social info={userInfo} />
-          </div>
-        </div>
-      ) : (
-        <></>
-      )}
-    </>
+    <div className='dark:bg-DM-dark-blue lg:flex-row bg-LM-white rounded-xl my-4 px-6 py-4 flex flex-col gap-4 lg:px-10 shadow-lg'>
+      <div className='hidden lg:contents '>
+        <Avatar info={userInfo} />
+      </div>
+      <div className='lg:px-6'>
+        <Info info={userInfo} />
+        <Stats info={userInfo} />
+        <Social info={userInfo} />
+      </div>
+    </div>
   );
 }
 
