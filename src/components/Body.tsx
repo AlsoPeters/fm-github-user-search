@@ -19,7 +19,7 @@ export default function Body({ userInfo }: BodyProps) {
           </div>
         </div>
       ) : (
-        ''
+        <></>
       )}
     </>
   );
