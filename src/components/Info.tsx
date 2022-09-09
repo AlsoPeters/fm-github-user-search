@@ -5,7 +5,7 @@ export default function Info({ info }: InfoProps) {
     <>
       <div className='flex items-center gap-4 mt-4 justify-self-start lg:justify-between md:gap-10'>
         <div className='lg:hidden'>
-          <Avatar />
+          <Avatar info={info} />
         </div>
         <div className='flex flex-col'>
           <div className='dark:text-DM-white md:text-2xl md:font-bold'>
