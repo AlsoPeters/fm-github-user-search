@@ -10,17 +10,23 @@ export default function LightDarkToggle() {
   return (
     <div>
       {colorTheme === 'light' ? (
-        <div onClick={() => setTheme('light')}>
-          <p className='flex items-center gap-4 font-Space text-lg'>
-            LIGHT
-            <Sun />
-          </p>
-        </div>
-      ) : (
-        <div onClick={() => setTheme('dark')}>
+        <div
+          className='hover:text-LM-grey hover:fill-LM-grey fill-DM-white cursor-pointer '
+          onClick={() => setTheme('light')}
+        >
           <p className='flex items-center gap-4 font-Space text-lg'>
             DARK
             <Moon />
+          </p>
+        </div>
+      ) : (
+        <div
+          className='hover:text-LM-black text-LM-grey hover:fill-DM-black fill-LM-grey cursor-pointer'
+          onClick={() => setTheme('dark')}
+        >
+          <p className='flex items-center gap-4 font-Space text-lg'>
+            LIGHT
+            <Sun />
           </p>
         </div>
       )}

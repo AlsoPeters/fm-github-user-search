@@ -17,7 +17,7 @@ export default function Search({ onSearch, error, loading }: SearchProps) {
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder='Search GitHub username...'
-            className='text-DM-white md:w-full font-Space text-sm caret-DM-blue dark:bg-DM-dark-blue border-none focus:outline-none'
+            className='dark:text-DM-white text-LM-black md:w-full font-Space text-sm caret-DM-blue dark:bg-DM-dark-blue border-none focus:outline-none'
           />
         </div>
         <p className='text-red-500 mr-4'>{error}</p>

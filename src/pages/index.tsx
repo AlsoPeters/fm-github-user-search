@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='mx-6 md:mx-24 lg:mx-auto font-Space'>
+      <div className='mx-6 md:mx-24 lg:w-[730px] lg:h-[611px] lg:mx-auto font-Space'>
         <Nav />
         <Search error={searchError} loading={loading} onSearch={getUser} />
         <Body userInfo={githubUser} />
