@@ -18,7 +18,9 @@ export default function Body({ userInfo }: BodyProps) {
             <Social info={userInfo} />
           </div>
         </div>
-      ) : null}
+      ) : (
+        ''
+      )}
     </>
   );
 }
