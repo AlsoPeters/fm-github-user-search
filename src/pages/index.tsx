@@ -36,7 +36,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className='md:flex md:flex-col md:justify-center md:h-screen lg:mx-96'>
+    <div className='md:flex md:flex-col md:justify-center md:h-screen'>
       <Head>
         <title>Github User Search</title>
         <meta name='description' content='Github User Search' />

@@ -15,8 +15,8 @@ export default function LightDarkToggle() {
           onClick={() => setTheme('light')}
         >
           <p className='flex items-center gap-4 font-Space text-lg'>
-            DARK
-            <Moon />
+            LIGHT
+            <Sun />
           </p>
         </div>
       ) : (
@@ -25,8 +25,8 @@ export default function LightDarkToggle() {
           onClick={() => setTheme('dark')}
         >
           <p className='flex items-center gap-4 font-Space text-lg'>
-            LIGHT
-            <Sun />
+            DARK
+            <Moon />
           </p>
         </div>
       )}

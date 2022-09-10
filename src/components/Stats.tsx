@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Stats({ info }: StatsProps) {
   return (
-    <div className='flex justify-around w-[480px] items-center dark:bg-DM-black bg-LM-light-grey rounded-lg dark:text-DM-white h-[85px] text-LM-grey'>
+    <div className='flex justify-around lg:w-[480px] items-center dark:bg-DM-black bg-LM-light-grey rounded-lg dark:text-DM-white h-[85px] text-LM-grey'>
       <div className='flex flex-col items-center'>
         <div>Repos</div>
         <div className='font-bold text-LM-black dark:text-DM-white'>
