@@ -10,17 +10,19 @@ export default function Search({ onSearch, error, loading }: SearchProps) {
 
   return (
     <>
-      <div className='dark:bg-DM-dark-blue md:px-4 bg-LM-white shadow-lg rounded-xl justify-around px-2 flex items-center'>
-        <div className='flex md:gap-4 gap-2 flex-grow'>
-          <SearchIcon />
+      <div className='flex items-center justify-around shadow-lg md:justify-between lg:justify-between dark:bg-DM-dark-blue md:px-4 bg-LM-white rounded-xl'>
+        <div className='flex lg:flex-grow'>
+          <SearchIcon className='' />
           <input
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder='Search GitHub username...'
-            className='dark:text-DM-white text-LM-black md:w-full font-Space text-sm caret-DM-blue dark:bg-DM-dark-blue border-none focus:outline-none'
+            className='px-2 border-none lg:px-2 dark:text-DM-white md:w-full text-LM-black font-Space caret-DM-blue dark:bg-DM-dark-blue focus:outline-none'
           />
         </div>
-        <p className='text-red-500 mr-4'>{error}</p>
+        <p className='absolute flex ml-4 text-red-500 sm:mr-4 sm:relative'>
+          {error}
+        </p>
         <button
           onClick={() => {
             onSubmit();
