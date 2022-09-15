@@ -13,7 +13,14 @@ export default function Info({ info }: InfoProps) {
           <div className='dark:text-DM-white md:text-2xl md:font-bold'>
             {info?.name}
           </div>
-          <div className='mb-2 text-DM-blue'>@{info?.login}</div>
+          <a
+            href={info.html_url}
+            target='_blank'
+            className='mb-2 no-underline text-DM-blue'
+            rel='noreferrer'
+          >
+            @{info?.login}
+          </a>
           <div className='dark:text-DM-white lg:hidden text-LM-grey'>
             Joined {date.toDateString()}
           </div>

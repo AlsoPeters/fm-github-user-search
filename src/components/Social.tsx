@@ -9,7 +9,7 @@ export default function Social({ info }: SocialProps) {
       <div className='flex flex-col'>
         <div className='text-LM-slate flex items-center gap-4 '>
           <Location className='dark:fill-DM-white fill-LM-slate' />
-          <p className='text-DM-white'>
+          <p className='dark:text-DM-white'>
             {info?.location ? (
               info?.location
             ) : (
@@ -20,8 +20,15 @@ export default function Social({ info }: SocialProps) {
         <div className='text-LM-slate flex items-center gap-4 '>
           <WebsiteIcon className='dark:fill-DM-white fill-LM-slate' />
           <p className='text-DM-blue'>
-            {info?.html_url ? (
-              <a href={info.html_url}>{info.html_url}</a>
+            {info?.blog ? (
+              <a
+                target='_blank'
+                href={info.blog}
+                rel='noreferrer'
+                className='dark:text-DM-white'
+              >
+                {info?.blog}
+              </a>
             ) : (
               <span className='text-gray-500'>Not Available</span>
             )}
