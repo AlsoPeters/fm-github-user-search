@@ -9,9 +9,8 @@ export default function Search({ onSearch, error, loading }: SearchProps) {
   }
 
   useEffect(() => {
-    const listener = (event) => {
+    const listener = (event: any) => {
       if (event.code === 'Enter' || event.code === 'NumpadEnter') {
-        console.log('Enter key was pressed. Run your function.');
         event.preventDefault();
         onSubmit();
       }
@@ -60,4 +59,5 @@ interface SearchProps {
   onSearch: (user: string) => void;
   loading: boolean;
   error: string;
+  keydown: React.KeyboardEvent<HTMLInputElement>;
 }
