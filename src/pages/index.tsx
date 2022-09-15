@@ -39,7 +39,12 @@ const Home: NextPage = () => {
       <Head>
         <title>Github User Search</title>
         <meta name='description' content='Github User Search' />
-        <link rel='icon' href='/favicon.ico' />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/image/favicon-32x32.png'
+        />
       </Head>
 
       <div className=' mx-4 md:mx-24 lg:w-[730px] lg:h-[611px] lg:mx-auto font-Space'>
