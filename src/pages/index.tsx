@@ -20,7 +20,6 @@ const Home: NextPage = () => {
         setSearchError(data.message);
         return;
       }
-      console.log('data', data);
 
       setGithubUser(data);
     } catch (error: any) {

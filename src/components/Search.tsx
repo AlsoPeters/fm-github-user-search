@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SearchIcon from '../assets/icon-search.svg';
 
 export default function Search({ onSearch, error, loading }: SearchProps) {
@@ -8,6 +8,20 @@ export default function Search({ onSearch, error, loading }: SearchProps) {
     onSearch(value);
   }
 
+  useEffect(() => {
+    const listener = (event) => {
+      if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+        console.log('Enter key was pressed. Run your function.');
+        event.preventDefault();
+        onSubmit();
+      }
+    };
+    document.addEventListener('keydown', listener);
+    return () => {
+      document.removeEventListener('keydown', listener);
+    };
+  }, [onSubmit]);
+
   return (
     <>
       <div className='flex items-center justify-around shadow-lg md:justify-between lg:justify-between dark:bg-DM-dark-blue md:px-4 bg-LM-white rounded-xl'>
@@ -15,6 +29,7 @@ export default function Search({ onSearch, error, loading }: SearchProps) {
           <SearchIcon className='' />
           <input
             value={value}
+            type='text'
             onChange={(e) => setValue(e.target.value)}
             placeholder='Search GitHub username...'
             className='px-2 border-none lg:px-2 dark:text-DM-white md:w-full text-LM-black font-Space caret-DM-blue dark:bg-DM-dark-blue focus:outline-none'
@@ -24,6 +39,7 @@ export default function Search({ onSearch, error, loading }: SearchProps) {
           {error}
         </p>
         <button
+          type='submit'
           onClick={() => {
             onSubmit();
           }}

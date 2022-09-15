@@ -1,6 +1,8 @@
 import Avatar from './Avatar';
 
 export default function Info({ info }: InfoProps) {
+  const date = new Date(info.created_at);
+
   return (
     <>
       <div className='flex items-center gap-4 mt-4 justify-self-start lg:justify-between md:gap-10'>
@@ -13,11 +15,11 @@ export default function Info({ info }: InfoProps) {
           </div>
           <div className='mb-2 text-DM-blue'>@{info?.login}</div>
           <div className='dark:text-DM-white lg:hidden text-LM-grey'>
-            Joined {info?.created_at}
+            Joined {date.toDateString()}
           </div>
         </div>
         <div className='hidden dark:text-DM-white lg:contents text-LM-grey'>
-          Joined {info?.created_at}
+          Joined {date.toDateString().substring(4)}
           {/* 25 Jan 2011 */}
         </div>
       </div>
