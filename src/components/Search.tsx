@@ -59,5 +59,4 @@ interface SearchProps {
   onSearch: (user: string) => void;
   loading: boolean;
   error: string;
-  keydown: React.KeyboardEvent<HTMLInputElement>;
 }
