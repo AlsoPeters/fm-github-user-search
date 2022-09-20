@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/github-user-search-CICqJ5S1Nm)
 - Live Site URL: [Live site at Vercel](https://fm-github-user-search.vercel.app/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/github-user-search-CICqJ5S1Nm)
 
 ## My process
 
@@ -52,7 +52,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Creating Light and Dark Mode toggle](https://javascript.plainenglish.io/how-to-create-light-and-dark-mode-toggle-in-next-js-with-tailwind-61e67518fd2d) - This was a helpfull starting to to creating the toggle button.
+- [Creating Light and Dark Mode toggle](https://javascript.plainenglish.io/how-to-create-light-and-dark-mode-toggle-in-next-js-with-tailwind-61e67518fd2d) - This was a helpful starting to to creating the toggle button.
 - [Fixing NextJS Hydration errors](https://nextjs.org/docs/messages/react-hydration-error) - The documentation on Hydration errors in NextJS. This helped me understand what was going on/ going wrong.
 
 ## Author
