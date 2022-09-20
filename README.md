@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-- How to create a Darkmode toggle using custom Hooks in React
+- How to create a Dark and Light mode toggle using custom Hooks in React
 - How to change a websites background color using NextJS and Tailwind
 
 ### Useful resources
